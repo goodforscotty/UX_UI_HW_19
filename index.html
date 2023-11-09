@@ -18,12 +18,12 @@
         </div>
 
 
-        <div class="logo-container-TopList">
+       <!-- <div class="logo-container-TopList">
             <ul>
                 <li>About</li>
                 <li>Resume</li>
             </ul>
-        </div>
+        </div> -->
 
 
     </section>
@@ -33,15 +33,19 @@
 
             <nav>
                 <ul>
-                    <li>Skills</li>
+                    <li><a href="#skills">Skills</a></li>
                     <p></p>
-                    <li>Projects</li>
+                    <li><a href="#projects">Projects</a></li>
                     <p></p>
-                    <li>Illustration</li>
+                    <li><a href="#illustration">Illustration</a></li>
                     <p></p>
-                    <li>Just for Fun</li>
+                    <li><a href="#justForFun">Just for Fun</a></li>
                     <p></p>
-                    <li>Contact</li>
+                    <li><a href="">About ↗</a></li>
+                    <p></p>
+                    <li><a href="">Resume ↗</a></li>
+                    <p></p>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </nav>
 
@@ -74,27 +78,35 @@
     <button class="tab-button active" id="skills-tab">Skills</button>
     <button class="tab-button" id="tools-tab">Tools</button>
 </div>
-<section class="mySkills">
+<section class="mySkills" id="skills">
 <div id="skillsDiv" class="tab-content show">  <div class="square"></div>
 <!--<h1>Skills</h1>-->
 <div class="flexContainer">
     <div class="skill">
+        <div class="skillTop">
         <img src="images/your_skill_icon1.jpg" alt="Skill Icon 1">
         <h3>User Research</h3>
+    </div>
+    <div class="skillBottom">
         <p>I combine quantitative methods like surveys and analytics with qualitative techniques
             such as interviews and usability testing for user research, ultimately informing
             user-centric design solutions.</p>
-    </div>
+        </div>
+        </div>
     <div class="skill">
+        <div class="skillTop">
         <img src="images/your_skill_icon2.jpg" alt="Skill Icon 2">
         <h3>Qualitative Interviews</h3>
+    </div>
         <p>I use open-ended questions and active listening in qualitative interviews to create a
             comfortable space for participants. My aim is to extract actionable data for
             user-centric solutions.</p>
     </div>
     <div class="skill">
+        <div class="skillTop">
         <img src="images/your_skill_icon3.jpg" alt="Skill Icon 3">
         <h3>User Empathy</h3>
+        </div>
         <p>I approach user empathy through active listening and by stepping into their
             perspective. I use tools like personas, empathy maps, and journey mapping to enhance
             my understanding and create designs that truly resonate with users.</p>
@@ -103,7 +115,7 @@
 </div>
 
 <div id="toolsDiv" class="tab-content show" style="display:none;"> <!-- Content for Tools tab -->
-    <!-- Add your tools content here -->
+    <!-- TOOLS -->
     <div class="tools">
      
             <div>
@@ -136,7 +148,7 @@
                     </section>
 
 
-                    <section class="myWork">
+                    <section class="myWork" id="projects">
                         <h1>Projects</h1>
 
                         <div class="workGrid">
@@ -171,7 +183,7 @@
 <!-- ILLUSTRATION -->
 
 
-<section class="myWork">
+<section class="myWork" id="illustration">
     <br>
     <h1>Illustration</h1>
 
@@ -207,7 +219,7 @@
 
 <!-- JUST FOR FUN-->
 
-<section class="myWork">
+<section class="myWork" id="justForFun">
     <br>
     <h1>Just For Fun</h1>
 
@@ -234,7 +246,7 @@
 
             </div>
             <div>
-                <div class="footer-content">
+                <div class="footer-content" id="contact">
                     <h1>Let's connect</h1>
                     <button>Book a discovery meeting</button>
 

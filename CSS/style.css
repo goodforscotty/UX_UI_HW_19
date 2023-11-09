@@ -8,7 +8,12 @@ body {
 header {
 
     padding: 20px;
-    align-items: center;
+    align-items: center;position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3a3e3d; /* Add your preferred background color */
+        width: 100%;
+    z-index: 1000;
 
 }
 
@@ -45,8 +50,18 @@ header {
 nav ul {
     list-style: none;
     padding: 20px;
-
+    font-size: 18px;
+    font-weight: 500;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: #3a3e3d; /* Add your preferred background color */
+    padding: 10px; /* Add your preferred padding */
+    width: 150px; /* Set a fixed width for the navigation */
+    z-index: 1000; /* Ensure it's above other elements */
 }
+
+
 
 
 .container {
@@ -89,6 +104,8 @@ nav ul {
     padding-left: 20px;
     background-color: #00c9e7;
     color: #F2F2F2;
+    font-size: large;
+    font-weight: 500;
     /* outline: 1px solid orange; */
 }
 
@@ -116,13 +133,14 @@ p {
 
 img {
     max-width: 100%;
+    border-radius: 5%;
 }
 
 
 footer {
     background-color: #00c9e7;
     text-align: center;
-}
+  }
 
 
 button, a {
@@ -151,7 +169,7 @@ button, a {
 
 .footer-content {
     display: flex;
-    padding: 20px;
+    padding: 60px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -185,6 +203,7 @@ button, a {
 .flexContainer {
     display: flex;
     justify-content: space-between;
+    /* outline: 1px solid red; */
 
 }
 
@@ -193,8 +212,19 @@ button, a {
     width: 33%;
     margin: 10px;
     padding: 10px;
-
+    display: block;
+        text-align: left;
+   
 }
+
+.skillTop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
 
 .tools {
     
