@@ -4,7 +4,9 @@
 
 <head>
     <link rel="stylesheet" href="CSS/style.css">
-</head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+    </head>
 
 
 <body>
@@ -66,34 +68,73 @@
 
                 <body>
 
+                    
+<!-- Start of Homework 19 -->
 
-                    <section class="mySkills">
+<!-- index.html -->
+<div class="tab-container">
+    <button class="tab-button" id="skills-tab">Skills</button>
+    <button class="tab-button" id="tools-tab">Tools</button>
+</div>
+<section class="mySkills">
+<div id="skillsDiv" class="tab-content">  <div class="square"></div>
+<!--<h1>Skills</h1>-->
+<div class="flexContainer">
+    <div class="skill">
+        <img src="images/your_skill_icon1.jpg" alt="Skill Icon 1">
+        <h3>User Research</h3>
+        <p>I combine quantitative methods like surveys and analytics with qualitative techniques
+            such as interviews and usability testing for user research, ultimately informing
+            user-centric design solutions.</p>
+    </div>
+    <div class="skill">
+        <img src="images/your_skill_icon2.jpg" alt="Skill Icon 2">
+        <h3>Qualiatative Interviews</h3>
+        <p>I use open-ended questions and active listening in qualitative interviews to create a
+            comfortable space for participants. My aim is to extract actionable data for
+            user-centric solutions.</p>
+    </div>
+    <div class="skill">
+        <img src="images/your_skill_icon3.jpg" alt="Skill Icon 3">
+        <h3>User Empathy</h3>
+        <p>I approach user empathy through active listening and by stepping into their
+            perspective. I use tools like personas, empathy maps, and journey mapping to enhance
+            my understanding and create designs that truly resonate with users.</p>
+    </div>
+</div>
+</div>
 
-                        <div class="square"></div>
-                        <h1>Skills</h1>
-                        <div class="flexContainer">
-                            <div class="skill">
-                                <img src="images/your_skill_icon1.jpg" alt="Skill Icon 1">
-                                <h3>User Research</h3>
-                                <p>I combine quantitative methods like surveys and analytics with qualitative techniques
-                                    such as interviews and usability testing for user research, ultimately informing
-                                    user-centric design solutions.</p>
-                            </div>
-                            <div class="skill">
-                                <img src="images/your_skill_icon2.jpg" alt="Skill Icon 2">
-                                <h3>Qualiatative Interviews</h3>
-                                <p>I use open-ended questions and active listening in qualitative interviews to create a
-                                    comfortable space for participants. My aim is to extract actionable data for
-                                    user-centric solutions.</p>
-                            </div>
-                            <div class="skill">
-                                <img src="images/your_skill_icon3.jpg" alt="Skill Icon 3">
-                                <h3>User Empathy</h3>
-                                <p>I approach user empathy through active listening and by stepping into their
-                                    perspective. I use tools like personas, empathy maps, and journey mapping to enhance
-                                    my understanding and create designs that truly resonate with users.</p>
-                            </div>
-                        </div>
+<div id="toolsDiv" class="tab-content" style="display:none;"> <!-- Content for Tools tab -->
+    <!-- Add your tools content here -->
+    <div class="tools">
+     
+            <div>
+            <img src="images/your_skill_icon3.jpg" alt="Skill Icon 3">
+        <h3>Figma</h3>
+        </div>
+
+        <div>
+            <img src="images/your_skill_icon3.jpg" alt="Skill Icon 3">
+        <h3>Figma</h3>
+        </div>
+        <div>
+            <img src="images/your_skill_icon3.jpg" alt="Skill Icon 3">
+        <h3>Figma</h3>
+        </div>
+        <div>
+            <img src="images/your_skill_icon3.jpg" alt="Skill Icon 3">
+        <h3>Figma</h3>
+        </div>
+        <div>
+            <img src="images/your_skill_icon3.jpg" alt="Skill Icon 3">
+        <h3>Figma</h3>
+        </div>
+    </div>
+</div>
+<!-- End of what I added Nov8th, 10:19-->
+                   
+
+                       
                     </section>
 
 
@@ -150,5 +191,5 @@
 
 </body>
 
-
+<script src="js/index.js"></script>
 </html>

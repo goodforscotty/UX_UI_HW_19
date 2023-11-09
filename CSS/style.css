@@ -191,6 +191,15 @@ button {
 
 }
 
+.tools {
+    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    outline: 1px solid red;
+}
 
 .myWork {
     display: grid;
@@ -212,6 +221,42 @@ button {
 .project {
     margin: 10px;
     padding: 10px;
+}
+
+
+/* Start of Homework 19 */
+
+/* Update your CSS to remove background colors */
+.tab-container {
+    display: flex;
+    justify-content: flex-start; /* To display buttons in a row */
+}
+
+.tab-button {
+    padding: 10px;
+    background-color: #F2F2F2;
+    color: #00c9e7;
+    user-select: none;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+#skills-tab.active {
+    color: #3a3e3d; /* Change the text color for active state */
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    font-weight: 600;
+}
+
+#tools-tab.active {
+    color: #3a3e3d; /* Change the text color for active state */
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    font-weight: 600;
+}
+
+.tab-button.active {
+    /* Add styles for active state */
+   /* border-bottom: 2px solid; /* Add an underline for active state */
 }
 
 
