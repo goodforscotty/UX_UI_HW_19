@@ -114,7 +114,6 @@ p {
     
 }
 
-
 img {
     max-width: 100%;
 }
@@ -126,13 +125,14 @@ footer {
 }
 
 
-button {
+button, a {
     background-color: #3a3e3d;
     color: #F2F2F2;
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 
