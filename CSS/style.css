@@ -111,6 +111,7 @@ h1 {
 
 p {
     color: #3a3e3d;
+    
 }
 
 
@@ -253,8 +254,6 @@ button {
 #toolsDiv.show {
     display: block;
 }
-
-
 
 
 
