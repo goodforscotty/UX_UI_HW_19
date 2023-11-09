@@ -1,15 +1,19 @@
-// Update your JavaScript to toggle active class
-$(document).ready(function() {
-    $(".tab-button").click(function() {
-        $(".tab-button").removeClass("active");
-        $(this).addClass("active");
+$(document).ready(function () {
+    $("#skills-tab").click(function () {
+        $("#skillsDiv").css("display", "block").animate({opacity: 1}, 500);
+        $("#toolsDiv").animate({opacity: 0}, 500, function () {
+            $(this).css("display", "none");
+        });
+        $("#skills-tab").addClass("active");
+        $("#tools-tab").removeClass("active");
+    });
 
-        if ($(this).attr("id") === "skills-tab") {
-            $("#toolsDiv").hide();
-            $("#skillsDiv").show();
-        } else if ($(this).attr("id") === "tools-tab") {
-            $("#skillsDiv").hide();
-            $("#toolsDiv").show();
-        }
+    $("#tools-tab").click(function () {
+        $("#toolsDiv").css("display", "block").animate({opacity: 1}, 500);
+        $("#skillsDiv").animate({opacity: 0}, 500, function () {
+            $(this).css("display", "none");
+        });
+        $("#skills-tab").removeClass("active");
+        $("#tools-tab").addClass("active");
     });
 });

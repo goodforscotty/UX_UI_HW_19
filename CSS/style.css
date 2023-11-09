@@ -225,16 +225,36 @@ button {
 
 .tab-content {
     width: 100%;
-    /* outline: 1px solid red; */ 
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
+
+#skillsDiv,
+#toolsDiv {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.tab-content.show {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#toolsDiv.show {
+    display: block;
+}
+
+
+
 
 
 /* Start of Homework 19 */
 
-/* Update your CSS to remove background colors */
+
 .tab-container {
     display: flex;
-    justify-content: flex-start; /* To display buttons in a row */
+    justify-content: flex-start; 
 }
 
 .tab-button {
@@ -242,18 +262,20 @@ button {
     background-color: #F2F2F2;
     color: #00c9e7;
     user-select: none;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px; 
+    transition: color 0.5s ease, border-bottom 0.3s ease;
 }
 
+
 #skills-tab.active {
-    color: #3a3e3d; /* Change the text color for active state */
+    color: #3a3e3d; 
     text-decoration: underline;
     text-underline-offset: 8px;
     font-weight: 600;
 }
 
 #tools-tab.active {
-    color: #3a3e3d; /* Change the text color for active state */
+    color: #3a3e3d; 
     text-decoration: underline;
     text-underline-offset: 8px;
     font-weight: 600;
