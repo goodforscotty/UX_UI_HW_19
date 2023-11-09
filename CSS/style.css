@@ -194,11 +194,11 @@ button {
 .tools {
     
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 50px;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 .myWork {
@@ -221,6 +221,11 @@ button {
 .project {
     margin: 10px;
     padding: 10px;
+}
+
+.tab-content {
+    width: 100%;
+    /* outline: 1px solid red; */ 
 }
 
 
@@ -252,11 +257,6 @@ button {
     text-decoration: underline;
     text-underline-offset: 8px;
     font-weight: 600;
-}
-
-.tab-button.active {
-    /* Add styles for active state */
-   /* border-bottom: 2px solid; /* Add an underline for active state */
 }
 
 
